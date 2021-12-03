@@ -1,0 +1,56 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 70px;
+}
+
+.part{
+    display: block;
+    width: 80%;
+    height: 85vh;
+    margin: 0px;
+    padding: 20px 10%;
+}
+
+a.part{
+    text-decoration: None;
+    color: black;
+}
+
+.part:hover {
+    background: lightcyan;
+}
+
+.part:hover > h2 {
+    margin-left: 20px;
+    transition: margin 2s;
+}
+.part:hover > h2::before {
+    content: "> ";
+}
+.part:hover > h2::after {
+    content: " <";
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    width: 100vw;
+    z-index: 1;
+    background: lightsteelblue;
+}
+
+#header h1 {
+    margin-left: 10%;
+    width: 70%;
+    display: inline-block;
+    color: black;
+}
+
+.logo {
+    height: 70px;
+    float: right;
+    margin-right: 20px;
+}

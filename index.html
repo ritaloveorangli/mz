@@ -1,30 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>1MZ</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="header">
-      <a href="index.html">
-        <h1>1MZ</h1>
-      </a>
-      <img class="logo" src="img/logo.png" alt=""/>
-    </div>
-    <a class="part" href="allgemein.html">
-      <h2>Allgemein</h2>
-      <p>Hier sind Informationen zur Klasse.</p>
-    </a>
-    <a class="part" href="musik.html">
-      <h2>M-Teil</h2>
-      <p>Hier sind Informationen über den M-Teil der Klasse.</p>
-    </a>
-    <a class="part" href=z-teil.html>
-      <h2>Z-Teil</h2>
-      <p>Hier sind informationen über den Z-Teil der Klasse.</p>
-    </a>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>1MZ</title>
+        <style>
 
-  </body>
+        #float {
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+
+    left: 100px;
+    position: relative;
+
+}
+
+#float:hover {
+    transform:scale(2, 2);
+    transform-origin: top left;
+    transition: transform 2s ease;
+}
+
+body {font-family: serif;}
+body {background: linear-gradient(#b2dbf3, #7fc5ee, #9193f5, #5184f3)}
+body {color:azure}
+
+.expand p {
+    display: none;
+}
+.expand:hover p{
+    display: block;
+}
+
+@keyframes bounceIn { 0% { transform: scale(0.1); opacity: 0; } 60% { transform: scale(1.2); opacity: 1; } 100% { transform: scale(1); } }
+div { animation-duration: 2s; animation-name: bounceIn; }
+
+
+
+</style>
+    </head>
+    <body>
+        <h1>Die Webseite der Klasse 1MZ</h1>
+        <a href="https://www.youtube.com/watch?v=yW-n0DJFalY">Click me!</a>
+
+
+
+        <div class="expand">
+            <h3>Allgemein</h3>   
+        </div>
+        <ul>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><p2>Museumbesuche:</p2></li>
+            <li><p2>Klassenlager:</p2></li>
+            <li><a href="lehrpersonen.html">Lehrpersonen</a></li>
+        </ul>
+
+        <h2><a href="musik.html">Musik</a></h2>
+
+        <audio controls>
+            <source src="res/klassenintro.mp4" type="audio/ogg">
+            <source src= "res/klassenintro.mp4" type="audio/mpeg">
+                Your browser does not support the audio element.
+        </audio>
+        <p>
+            <strong>- Opernbesuche </strong>
+        </p>
+        <p>
+            <strong>- Ballettbesuche </strong>
+        </p>
+
+        <div>
+            <div class= "expand">
+                <h3>Chor</h3>
+                    <ul>  
+                        <p>Konzerte:</p>
+                        <p>Leitende Personen:</p>
+                        <P>Projekte:</P>
+                        <p>Lager:</p>
+                    </ul>
+            </div>
+        </div>
+
+        - Wer spielt welches Instrument<br>
+            - Theorie und Analyse<br>
+            - Was beinhaltet der Schwerpunkt Musik?<br>
+
+        <ul>
+            <li><p2>Schüler*innen:</p2></li>
+            <li><p2>Instrumente:</p2></li>
+            <li><a href="stundenplan.html">Stundenplan</a></li>
+            <li><p2>Projekte:</p2></li>
+        </ul>
+
+        <h2>Zeichnen</h2>
+        <img src="img/logo.png" width="200px" height="200px">
+        <ul>
+            <li><a href="stundenplan.html">Stundenplan</a></li>
+            <li><p2>Schüler*innen:</p2></li>
+            <li><p2>Projekte:</p2></li>
+        </ul>
+
+
+
+
+
+    </body>
 </html>
